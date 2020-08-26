@@ -47,6 +47,8 @@ export class NgDropFilesDirective {
       if(this._puedeSerCargado(archivoTemporal)){
         const nuevoArchivo = new FileItem(archivoTemporal);
         this.archivos.push(nuevoArchivo);
+      }else{
+        console.log('Archivo no compatible');
       }
     }
   }
